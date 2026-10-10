@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact Us | Ulanzi Global Limited</title>
+<meta name="description" content="Contact Ulanzi Global Limited in Jabi, Abuja.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+<link rel="icon" href="assets/img/logo.png">
+</head>
+<body>
+
+<div class="util">
+  <div class="wrap">
+    <div class="l">
+      <a href="mailto:info@ulanziglobal.com">info@ulanziglobal.com</a>
+      <a href="tel:+2348035703563">+234 803 570 3563</a>
+      <a href="contact.html">Jabi, Abuja, Nigeria</a>
+    </div>
+    <div class="r">RC <span>888936</span> · Incorporated <span>2010</span></div>
+  </div>
+</div>
+
+<header class="site">
+  <div class="wrap">
+    <a href="index.html" class="brand" aria-label="Ulanzi Global Limited home"><img src="assets/img/logo.png" alt="Ulanzi Global Limited"></a>
+    <nav class="main" id="nav">
+      <a href="about.html">About Us</a>
+      <a href="services.html">Services</a>
+      <a href="products.html">Crude &amp; Products</a>
+      <a href="projects.html">Projects</a>
+      <a href="hse.html">QHSE</a>
+      <a href="leadership.html">Leadership</a>
+      <a href="contact.html" class="btn btn-primary active">Contact Us</a>
+    </nav>
+    <button class="burger" aria-label="Menu" onclick="document.getElementById('nav').classList.toggle('open')">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+    </button>
+  </div>
+</header>
+
+<main>
+<section class="page-hero">
+  <div class="bg" style="background-image:url(assets/img/manifold.jpg)"></div>
+  <div class="wrap">
+    <div class="crumbs"><a href="index.html">Home</a><span>/</span><b>Contact Us</b></div>
+    <h1>Let's talk about your next project.</h1>
+    <p>Reach our Abuja head office about services, product supply or partnership opportunities.</p>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="wrap">
+    <div class="contact reveal">
+      <div class="info">
+        <span class="eyebrow">Contact</span>
+        <h2>Let's discuss your next project.</h2>
+        <p>Speak to our team about services, product supply or partnership opportunities.</p>
+        <div class="ci"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s7-7.5 7-13a7 7 0 10-14 0c0 5.5 7 13 7 13z"/><circle cx="12" cy="9" r="2.5"/></svg><div><b>Head Office</b>Alba Plaza, Plot 91, Suite 206,<br>Obafemi Awolowo Way, Jabi, Abuja</div></div>
+        <div class="ci"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.9v3a2 2 0 01-2.2 2 19.8 19.8 0 01-8.6-3.1 19.5 19.5 0 01-6-6A19.8 19.8 0 012.1 4.2 2 2 0 014.1 2h3a2 2 0 012 1.7c.1.9.4 1.8.7 2.7a2 2 0 01-.5 2.1L8 9.8a16 16 0 006 6l1.3-1.3a2 2 0 012.1-.4c.9.3 1.8.6 2.7.7a2 2 0 011.7 2z"/></svg><div><b>Phone</b><a href="tel:+2348035703563">+234 803 570 3563</a><br><a href="tel:+2348071617925">+234 807 161 7925</a></div></div>
+        <div class="ci"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 6l-10 7L2 6"/></svg><div><b>Email</b><a href="mailto:info@ulanziglobal.com">info@ulanziglobal.com</a></div></div>
+      </div>
+      <form onsubmit="event.preventDefault();var f=this;location.href='mailto:info@ulanziglobal.com?subject='+encodeURIComponent('Enquiry: '+f.topic.value+', '+f.name.value)+'&body='+encodeURIComponent(f.msg.value+'\n\n'+f.name.value+'\n'+f.company.value+'\n'+f.email.value+'\n'+f.phone.value);">
+        <h3>Send an enquiry</h3>
+        <div><label for="name">Full name</label><input id="name" name="name" required></div>
+        <div><label for="company">Company</label><input id="company" name="company"></div>
+        <div><label for="email">Email</label><input id="email" name="email" type="email" required></div>
+        <div><label for="phone">Phone</label><input id="phone" name="phone" type="tel"></div>
+        <div class="full"><label for="topic">Enquiry type</label>
+          <select id="topic" name="topic"><option>Oilfield services</option><option>Crude oil / product supply</option><option>Marine services</option><option>Strategic investment</option><option>Careers</option><option>Other</option></select></div>
+        <div class="full"><label for="msg">Message</label><textarea id="msg" name="msg" required></textarea></div>
+        <div class="full"><button class="btn btn-primary" type="submit">Send message <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button></div>
+      </form>
+    </div>
+    <div class="map reveal"><iframe title="Map of Ulanzi Global head office, Jabi, Abuja" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://maps.google.com/maps?q=Alba%20Plaza%2C%20Obafemi%20Awolowo%20Way%2C%20Jabi%2C%20Abuja&z=15&output=embed"></iframe></div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="f-grid">
+      <div>
+        <a href="index.html" class="brand"><img src="assets/img/logo.png" alt="Ulanzi Global Limited"></a>
+        <p class="about-f">Integrated oil &amp; gas services: construction, maintenance, subsea, marine, product supply and strategic investment.</p>
+        <div class="fraud"><b style="color:#fff">Fraud alert:</b> Ulanzi Global never requests payment for job offers or contract awards. Verify all communications via info@ulanziglobal.com.</div>
+      </div>
+      <div><h4>Company</h4><ul><li><a href="about.html">About us</a></li><li><a href="leadership.html">Leadership</a></li><li><a href="hse.html">QHSE</a></li><li><a href="projects.html">Projects</a></li></ul></div>
+      <div><h4>What we do</h4><ul><li><a href="services.html">Offshore O&amp;M</a></li><li><a href="services.html">Subsea engineering</a></li><li><a href="services.html">Marine services</a></li><li><a href="products.html">Crude &amp; products</a></li></ul></div>
+      <div><h4>Head office</h4><p>Alba Plaza, Plot 91, Suite 206<br>Obafemi Awolowo Way, Jabi, Abuja, Nigeria</p><p style="margin-top:12px"><a href="mailto:info@ulanziglobal.com">info@ulanziglobal.com</a><br><a href="tel:+2348035703563">+234 803 570 3563</a></p></div>
+    </div>
+    <div class="f-bot"><span>© <span id="yr">2026</span> Ulanzi Global Limited. RC 888936. All rights reserved.</span><span>www.ulanziglobal.com</span></div>
+  </div>
+</footer>
+
+<script src="assets/site.js"></script>
+</body>
+</html>
