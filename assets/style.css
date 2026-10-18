@@ -258,16 +258,24 @@ footer .about-f{margin-top:18px;max-width:340px}
   .about .media .badge{left:16px}
   .about .media .inset{right:12px}
 }
+@media (max-width:900px){
+  .strip .wrap{grid-template-columns:1fr 1fr}
+  .strip .s{padding:22px 14px;border-bottom:1px solid rgba(255,255,255,.1)}
+  .strip .s:nth-child(odd){padding-left:0}
+  .strip .s:nth-child(2){border-right:0}
+  .about .media img{height:420px}
+  .products .media img:first-child{height:420px}
+  .products .media img:not(:first-child){height:204px}
+  .gov img{height:360px}
+  .teaser a{height:280px}
+  .team{grid-template-columns:repeat(2,1fr)}
+}
 @media (max-width:680px){
   body{font-size:16px}
   .wrap{padding:0 16px}
   section{padding:72px 0}
   .util .l a:nth-child(n+2){display:none}
   .util .r{display:none}
-  .strip .wrap{grid-template-columns:1fr 1fr}
-  .strip .s{padding:22px 14px;border-bottom:1px solid rgba(255,255,255,.1)}
-  .strip .s:nth-child(odd){padding-left:0}
-  .strip .s:nth-child(2){border-right:0}
   .strip b{font-size:32px}
   .divs,.invest,.svc-grid,.team,.creds,.f-grid,.prod-list,.vm{grid-template-columns:1fr}
   .about .media img{height:360px}
@@ -283,6 +291,35 @@ footer .about-f{margin-top:18px;max-width:340px}
   .hero .wrap{padding-bottom:56px}
   .brand img{height:34px}
 }
+/* large / external & curved ultrawide monitors */
+@media (min-width:1600px){
+  :root{--max:1400px}
+  body{font-size:18px}
+  .wrap{padding:0 40px}
+}
+@media (min-width:2200px){
+  :root{--max:1680px}
+  .wrap{padding:0 56px}
+  .hero h1{font-size:clamp(56px,4.6vw,100px)}
+  .page-hero h1{font-size:clamp(46px,3.6vw,76px)}
+}
+@media (min-width:1600px) and (min-aspect-ratio:21/9){
+  .hero{min-height:560px;max-height:640px}
+  .hero .bg,.page-hero .bg{background-position:center 38%}
+  .page-hero .wrap{padding-top:80px;padding-bottom:70px}
+}
+@media (max-width:420px){
+  .strip .wrap{grid-template-columns:1fr}
+  .strip .s{border-right:0;border-bottom:1px solid rgba(255,255,255,.1);padding:18px 0}
+  .strip .s:last-child{border-bottom:0}
+  .hero .ctas{flex-direction:column;align-items:stretch}
+  .hero .ctas .btn{justify-content:center}
+  .btn{padding:14px 20px;font-size:14px}
+  .about .media .badge{padding:20px 22px}
+  .about .media .badge b{font-size:34px}
+  .teaser a{height:220px}
+  footer .brand img{height:56px}
+}
 /* ---- multi-page additions ---- */
 .page-hero{position:relative;color:#fff;background:var(--navy);overflow:hidden;padding:0}
 .page-hero .bg{position:absolute;inset:0;background-size:cover;background-position:center 40%}
@@ -290,7 +327,7 @@ footer .about-f{margin-top:18px;max-width:340px}
   radial-gradient(760px 520px at 100% 0%,rgba(63,184,227,.26),transparent 60%),
   linear-gradient(90deg,rgba(10,37,80,.95) 0%,rgba(10,37,80,.75) 45%,rgba(10,37,80,.35) 100%)}
 .page-hero .wrap{position:relative;z-index:2;padding-top:110px;padding-bottom:90px}
-.crumbs{font-size:14px;color:#aebbd4;display:flex;gap:8px;align-items:center;margin-bottom:22px}
+.crumbs{font-size:14px;color:#aebbd4;display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin-bottom:22px}
 .crumbs a:hover{color:#fff}
 .crumbs b{color:var(--orange-2);font-weight:600}
 .page-hero h1{color:#fff;font-size:clamp(38px,5vw,64px);font-weight:800;letter-spacing:-.03em;max-width:820px}
